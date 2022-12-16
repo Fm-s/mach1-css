@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+    <style>
+        .main_button{
+            background-color:  #0F0C33;
+            color: #FFF;
+            padding: 5px;
+            animation-duration: 600ms;
+            
+        }
+        .main_button:hover{
+            animation-name: upDown15;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        .informacoes{
+            padding-left: 25px;
+            padding-top: 25px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            color: black;
+            background-color: yellow;
+            transition: all 600ms ease-in-out 200ms;
+        }
+
+        .informacoes p, .informacoes h1 {
+            opacity: 0;
+            transition: opacity 200ms ease-in 500ms;
+        }
+
+        .informacoes:hover p, .informacoes:hover h1{
+            opacity: 1;
+        }
+
+        .informacoes:hover{
+            width: 300px;
+            border-radius: 10px;
+        }
+
+
+        @keyframes upDown15 {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            25% {
+                transform: rotateZ(15deg);
+            }
+            75%{
+                transform: rotateZ(-15deg);
+            }
+            100%{
+                transform: rotateZ(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="main_button">Logar</button>
+    </div>
+    <div class="informacoes">
+        <div>
+            <h1>Titulo do produto</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
