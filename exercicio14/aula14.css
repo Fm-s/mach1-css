@@ -7,6 +7,46 @@
     box-sizing: border-box;
 }
 
+.card{
+    margin: 10px;
+    background-color: azure;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 150px;
+}
+
+.gridA, .gridB{
+    width: 100%;
+}
+
+.grids{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gridA{
+    background-color: blueviolet;
+}
+
+.gridB{
+    background-color: brown;
+}
+
+@media (min-width: 992px){
+    .grids{
+        flex-wrap: nowrap;
+    }
+    .gridA{
+        width: 70%;
+    }
+    .gridB{
+        width: 30%;
+    }
+}
+
+
+
 .f1{
     background-color: blue;
 }
